@@ -2,7 +2,7 @@ import React , { Component } from "react";
 
 class TodoComponent extends Component{
     constructor(){
-        super(props);
+        super();
         this.state = {
             title:"Demo App"
         }
@@ -11,7 +11,7 @@ class TodoComponent extends Component{
     render() {
         return (
             <div>
-                <h1>Hello from Todo component</h1>
+                <h1>Hello from {this.state.title} </h1>
             </div>
         )
     }
