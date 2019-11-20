@@ -1,13 +1,18 @@
-import React from 'react';
-import TodoComponent from './components/todoComponent';
+import React from "react";
+import { Provider } from "react-redux";
+import store from "./store";
+
+import RegisterComponent from './components/register/registerComponent';
 
 function App() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <TodoComponent />
-            </header>
-        </div>
+        <Provider store={store}>
+            <div className="App">
+                <header className="App-header">
+                    <RegisterComponent />
+                </header>
+            </div>
+        </Provider>
     );
 }
 
